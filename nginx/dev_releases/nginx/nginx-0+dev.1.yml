@@ -1,0 +1,30 @@
+name: nginx
+version: 0+dev.1
+commit_hash: 42aac9c
+uncommitted_changes: true
+jobs:
+- name: web_ui
+  version: bef9b540db243f1132786f0cd3898fbfea049d599928af97e6ee2a67a62723ec
+  fingerprint: bef9b540db243f1132786f0cd3898fbfea049d599928af97e6ee2a67a62723ec
+  sha1: sha256:774c57167a1f2fb9112d74235e02c8d8ec9d550681ba5605b5a6e85476c382e1
+  packages:
+  - nginx
+  - ruby_1.9.3
+packages:
+- name: libyaml_0.1.4
+  version: f44df278922ea3ee3a542e774f016475ac6c6218fc12dde503b78e77723245ca
+  fingerprint: f44df278922ea3ee3a542e774f016475ac6c6218fc12dde503b78e77723245ca
+  sha1: sha256:fe9953a002b88079a9e78d918e09558f81c3ecd0fb31ced3adca1ef7c6c61375
+  dependencies: []
+- name: nginx
+  version: 18550a72c82742253b13b56df3c700c2c1c3ed27d62c0bf64ee7ff2bb67ed5c4
+  fingerprint: 18550a72c82742253b13b56df3c700c2c1c3ed27d62c0bf64ee7ff2bb67ed5c4
+  sha1: sha256:e44e080b2364f334d6752a28e183bbcc062bd38d4393481e0668de665a05ec18
+  dependencies:
+  - ruby_1.9.3
+- name: ruby_1.9.3
+  version: 35e70b966aafd379f5143112ae10a262f75633f787e2c4b8b1bfa27d3d612c91
+  fingerprint: 35e70b966aafd379f5143112ae10a262f75633f787e2c4b8b1bfa27d3d612c91
+  sha1: sha256:35df035facd99d283a1d72b817ac6d9a3f358e24451adea4668239d98b930836
+  dependencies:
+  - libyaml_0.1.4
